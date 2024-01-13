@@ -210,8 +210,10 @@ svg {
 section {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr;
-    grid-template-areas: 'ptitle atitle' 'projects announc' 'projects trend';
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas: 'ptitle atitle' 'projects announc' 
+    'projects trendtitle'
+    'projects trend';
     gap: 20px;
     padding: 20px;
 }
@@ -225,7 +227,8 @@ section {
 }
 
 .ptitle,
-.atitle {
+.atitle,
+.trend-title {
     font-size: 1.4rem;
     color: #292524;
     font-weight: 700;
@@ -390,4 +393,8 @@ aside div > div:hover {
     height: 70px;
     cursor: pointer;
     
+}
+
+.trend-title{
+    grid-area: trendtitle;
 }

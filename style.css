@@ -28,6 +28,7 @@ header {
     font-weight: bolder;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1;
+    
 }
 
 header .user,
@@ -62,6 +63,8 @@ header .search {
     display: flex;
     gap: 15px;
     align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .user {
@@ -398,3 +401,103 @@ aside div > div:hover {
 .trend-title{
     grid-area: trendtitle;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media  ( width <= 1002px ) { 
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 30px;
+        
+    }
+    aside nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: ;
+    }
+    aside nav .general , aside nav .privacy{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        font-size: 0.8rem;
+    }
+    aside nav .general  svg{
+    
+    }
+    aside nav .privacy{
+       
+    }
+
+
+    .general div,
+.privacy div {
+    
+    gap: 10px;
+    margin-left: 0px;
+   
+}
+
+
+header .username {
+    font-size: 1.2rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    gap: 50px;
+}
+.user{
+    font-size: 1rem;
+}
+.buttons{
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+@media (width <= 365px){
+    .projectcontainer  {
+        width: 70%;
+       
+    }
+ 
+}
+
